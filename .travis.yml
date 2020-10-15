@@ -3,6 +3,11 @@
 language: R
 cache: packages
 
+dist: trusty
+sudo: required
+group: edge
+warnings_are_errors: false
+
 install:
   - Rscript -e "install.packages('dplyr')"
   - Rscript -e "install.packages('knitr')"
@@ -12,7 +17,3 @@ install:
   - Rscript -e "install.packages('graphics')"
   - Rscript -e "install.packages('testthat')"
   - Rscript -e "install.packages('rmarkdown')"
-
-warnings_are_errors: false
-
-r_check_args: "--no-build-vignettes --as-cran"
