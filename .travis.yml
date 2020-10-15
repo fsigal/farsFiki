@@ -10,3 +10,7 @@ install:
   - Rscript -e "install.packages('readr')"
   - Rscript -e "install.packages('tidyr')"
   - Rscript -e "install.packages('graphics')"
+
+env:
+ global:
+   - _R_CHECK_FORCE_SUGGESTS_: false
