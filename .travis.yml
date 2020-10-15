@@ -14,4 +14,3 @@ install:
   - Rscript -e "install.packages('rmarkdown')"
 
 r_build_args: "--no-build-vignettes"
-r_check_args: "--no-build-vignettes --as-cran"
