@@ -3,7 +3,6 @@
 language: R
 cache: packages
 
-dist: trusty
 sudo: required
 group: edge
 warnings_are_errors: false
