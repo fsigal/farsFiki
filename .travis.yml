@@ -8,3 +8,5 @@ install:
   - Rscript -e "install.packages('knitr')"
   - Rscript -e "install.packages('maps')"
   - Rscript -e "install.packages('readr')"
+  - Rscript -e "install.packages('tidyr')"
+  - Rscript -e "install.packages('graphics')"
