@@ -76,6 +76,7 @@ make_filename <- function(year) {
 #'
 #' @export
 
+install.packages("dplyr")
 fars_read_years <- function(years) {
   lapply(years, function(year) {
     file <- make_filename(year)
