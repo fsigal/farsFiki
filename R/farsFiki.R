@@ -14,8 +14,10 @@
 #' message telling us that.
 #'
 #' @examples
+#' \dontrun{
 #' fars_read("data.csv")
 #' fars_read("datos.csv")
+#' }
 #'
 #' @importFrom readr read_csv
 #' @importFrom dplyr tbl_df
@@ -138,8 +140,10 @@ fars_summarize_years <- function(years) {
 #' accidents, a warning is shown.
 #'
 #' @examples
+#' \dontrun{
 #' fars_map_state(50, 2015)
 #' fars_map_state(01, 1990)
+#' }
 #'
 #' @importFrom maps map
 #' @importFrom graphics points
