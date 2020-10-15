@@ -13,6 +13,7 @@ install:
   - Rscript -e "install.packages('testthat')"
   - Rscript -e "install.packages('rmarkdown')"
 
+
 script:
   - CI=false run build
 
