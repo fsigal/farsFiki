@@ -2,6 +2,7 @@
 # farsFiki
 
   <!-- badges: start -->
+  [![Build Status](https://travis-ci.com/fsigal/farsFiki.svg?branch=main)](https://travis-ci.com/fsigal/farsFiki)
   <!-- badges: end -->
 
 The goal of farsFiki is to import csv files with accidents data, summarize accidents information and create maps with this data.
