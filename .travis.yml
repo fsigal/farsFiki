@@ -3,8 +3,6 @@
 language: R
 cache: packages
 
-sudo: required
-group: edge
 warnings_are_errors: false
 
 install:
