@@ -24,7 +24,5 @@ If a year doesn't appears in any filename, it will return
 a warning.
 }
 \examples{
-fars_summarize_years(c(2010,2014,2018))
-fars_summarize_years(1990:1999)
 
 }

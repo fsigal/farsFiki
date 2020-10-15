@@ -65,8 +65,6 @@ make_filename <- function(year) {
 #' a warning.
 #'
 #' @examples
-#' fars_read_years(c(2010,2014,2018))
-#' fars_read_years(1990:1999)
 #'
 #' @importFrom dplyr mutate select
 #'
@@ -102,8 +100,6 @@ fars_read_years <- function(years) {
 #' a warning.
 #'
 #' @examples
-#' fars_summarize_years(c(2010,2014,2018))
-#' fars_summarize_years(1990:1999)
 #'
 #' @importFrom dplyr bind_rows group_by summarize
 #' @importFrom tidyr spread
