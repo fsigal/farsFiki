@@ -13,7 +13,5 @@ install:
   - Rscript -e "install.packages('testthat')"
   - Rscript -e "install.packages('rmarkdown')"
 
-
-script:
-  - CI=false run build
-
+r_build_args: "--no-build-vignettes"
+r_check_args: "--no-build-vignettes --as-cran"
