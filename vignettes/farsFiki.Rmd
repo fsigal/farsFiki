@@ -1,0 +1,55 @@
+---
+title: "farsFiki"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{farsFiki}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(farsFiki)
+```
+
+## fars_read function
+
+This function extracts a database from a .csv file and turns it into a tibble, ignoring all simple diagnostic messages and not showing any progress bar. If the file named in the argument doesn't exist, it will
+generate an error and this message will be printed: *"file 'filename' does not exist"*.
+
+The class of the resulting object is **tbl_df**.
+
+## make_filename function
+
+This function creates a filename with this format: "accident_*aaaa*.csv.bz2" indicating a year instead of *aaaa*. The value for *aaaa* comes from the function's argument.
+
+It works with any numeric value for year. If we enter a non-integer value as an input, the function uses only the integer part of the number.
+
+## fars_read_years function
+
+This function evaluates if the elements of a vector called "years" correspond to the years that appear in the names of the files with the format "accident_*aaaa*.csv.bz2" where *aaaa* is the year and returns a list of data frames containing years and months from each file.
+
+If a year doesn't appears in any filename, it will return a warning: "invalid year: **year that is not in any filename**".
+
+## fars_summarize_years function
+
+This function creates a table that summarize the number of observation in every file with the format "accident_*aaaa*.csv.bz2" where *aaaa* is a year.
+The output is a table where each row is a month and each column is a year, and contains the number of observations for each month and year in the files with the mentioned format
+
+If a year doesn't appears in any filename, it will return a warning, as in **fars_read_years** function.
+
+## fars_map_state function
+
+This function creates a map with the accidents happened in a certain year in a selected state.
+
+The arguments for this function are a code for a state and a year.
+
+The output is a map of the selected state with points corresponding to theplaces where the accidents occurred in the selected year.
+
+If state.num doesn't correspond to a state code, the process stops. If in the selected year and state there were no accidents, a message is shown: "no accidents to plot".

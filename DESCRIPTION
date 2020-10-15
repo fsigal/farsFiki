@@ -1,0 +1,19 @@
+Package: farsFiki
+Title: Extract and process data about accidents
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Facundo",
+           family = "Sigal",
+           role = c("aut", "cre"),
+           email = "fsigal@gmail.com")
+Description: Extract data about accidents from csv files, summarize information in a table and describe accidents in a map.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
