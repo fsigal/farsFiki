@@ -5,3 +5,4 @@ cache: packages
 
 install:
   - Rscript -e "install.packages('dplyr')"
+  - Rscript -e "install.packages('knitr')"
