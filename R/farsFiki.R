@@ -13,12 +13,6 @@
 #' @details If the filename doesn't exist, it will stop and print a
 #' message telling us that.
 #'
-#' @examples
-#' \dontrun{
-#' fars_read("data.csv")
-#' fars_read("datos.csv")
-#' }
-#'
 #' @importFrom readr read_csv
 #' @importFrom dplyr tbl_df
 #'
