@@ -25,7 +25,5 @@ process stops. If in the selected year and state there were no
 accidents, a warning is shown.
 }
 \examples{
-fars_map_state(50, 2015)
-fars_map_state(01, 1990)
 
 }

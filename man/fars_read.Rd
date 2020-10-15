@@ -22,8 +22,3 @@ showing any progress bar
 If the filename doesn't exist, it will stop and print a
 message telling us that.
 }
-\examples{
-fars_read("data.csv")
-fars_read("datos.csv")
-
-}
